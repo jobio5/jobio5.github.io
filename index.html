@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>عايز شغل | أكبر قناة وظائف في مصر والسعودية</title>
+<meta name="description" content="عايز شغل - قناة تليجرام لأحدث الوظائف اليومية في مصر والسعودية، رواتب تنافسية تصل إلى 50,000 جنيه. انضم الآن.">
+
+<!-- Favicon / logo -->
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/logo-192.png">
+<meta name="theme-color" content="#0A1220">
+
+<!-- Open Graph (Facebook / WhatsApp / link previews) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="عايز شغل">
+<meta property="og:title" content="عايز شغل | أكبر قناة وظائف في مصر والسعودية">
+<meta property="og:description" content="وظائف يومية محدثة في مصر والسعودية، رواتب تنافسية تصل إلى 50,000 جنيه.">
+<meta property="og:image" content="assets/og-image.png">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:url" content="https://jobchannel.github.io/">
+
+<!-- Twitter / X card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="عايز شغل | أكبر قناة وظائف في مصر والسعودية">
+<meta name="twitter:description" content="وظائف يومية محدثة في مصر والسعودية، رواتب تنافسية تصل إلى 50,000 جنيه.">
+<meta name="twitter:image" content="assets/og-image.png">
+
+<!-- Structured data: helps Google show the logo + name as a Knowledge/brand result -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "عايز شغل",
+  "alternateName": "Ayez Shoghl",
+  "url": "https://jobchannel.github.io/",
+  "logo": "https://jobchannel.github.io/assets/logo-512.png",
+  "sameAs": ["https://t.me/Managerjobs_5"],
+  "description": "أكبر قناة وظائف في مصر والسعودية، وظائف يومية محدثة برواتب تنافسية."
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy-deep:#0A1220;
+    --navy-panel:#111D30;
+    --navy-panel-2:#16253C;
+    --gold:#F0B429;
+    --gold-dim:#B8891F;
+    --emerald:#22C77A;
+    --paper:#F3EFE4;
+    --muted:#8DA0B8;
+    --hairline:rgba(243,239,228,0.09);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--navy-deep);
+    color:var(--paper);
+    font-family:'Tajawal',sans-serif;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.display{font-family:'Almarai',sans-serif;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
+
+  /* subtle grain / vignette background */
+  .bg-tex{
+    position:fixed;inset:0;z-index:0;pointer-events:none;
+    background:
+      radial-gradient(ellipse at 80% -10%, rgba(240,180,41,0.10), transparent 55%),
+      radial-gradient(ellipse at -10% 40%, rgba(34,199,122,0.06), transparent 50%);
+  }
+
+  /* ===== HEADER ===== */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(10,18,32,0.85);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--hairline);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;}
+  .brand{display:flex;align-items:center;gap:10px;font-family:'Almarai';font-weight:800;font-size:19px;}
+  
+  .cta-btn{
+    background:var(--gold);color:var(--navy-deep);
+    font-family:'Almarai';font-weight:800;font-size:14px;
+    padding:11px 22px;border-radius:999px;
+    display:inline-flex;align-items:center;gap:8px;
+    transition:transform .18s ease, box-shadow .18s ease;
+    box-shadow:0 0 0 0 rgba(240,180,41,0.5);
+  }
+  .cta-btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px -6px rgba(240,180,41,0.55);}
+  .cta-ghost{
+    border:1px solid var(--hairline); color:var(--paper);
+    font-weight:700; font-size:14px; padding:10px 20px; border-radius:999px;
+  }
+
+  /* ===== HERO ===== */
+  .hero{position:relative;z-index:1;padding:76px 0 40px;}
+  .hero-grid{display:grid;grid-template-columns:1.15fr 0.85fr;gap:52px;align-items:center;}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    color:var(--emerald);font-weight:700;font-size:13px;
+    border:1px solid rgba(34,199,122,0.35);
+    background:rgba(34,199,122,0.08);
+    padding:7px 14px;border-radius:999px;margin-bottom:22px;
+  }
+  .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--emerald);box-shadow:0 0 0 0 rgba(34,199,122,.6);animation:pulse 2s infinite;}
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(34,199,122,.55);}
+    70%{box-shadow:0 0 0 8px rgba(34,199,122,0);}
+    100%{box-shadow:0 0 0 0 rgba(34,199,122,0);}
+  }
+  h1{
+    font-size:clamp(34px,5.2vw,54px);
+    line-height:1.28;font-weight:800;
+    letter-spacing:-0.5px;
+  }
+  h1 .accent{color:var(--gold);}
+  .lede{
+    margin-top:20px;font-size:17px;line-height:1.9;color:var(--muted);
+    max-width:46ch;
+  }
+  .hero-actions{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap;}
+  .hero-actions .cta-btn{padding:15px 28px;font-size:15.5px;}
+  .hero-actions .cta-ghost{padding:15px 24px;}
+
+  .trust-row{display:flex;gap:26px;margin-top:44px;flex-wrap:wrap;}
+  .trust-item{display:flex;flex-direction:column;gap:2px;}
+  .trust-item .num{font-family:'Almarai';font-weight:800;font-size:22px;color:var(--paper);}
+  .trust-item .lbl{font-size:12.5px;color:var(--muted);}
+
+  /* ===== LIVE FEED (signature element) ===== */
+  .feed-shell{
+    position:relative;
+    background:linear-gradient(180deg,var(--navy-panel),var(--navy-panel-2));
+    border:1px solid var(--hairline);
+    border-radius:22px;
+    padding:18px;
+    height:460px;
+    overflow:hidden;
+    box-shadow:0 30px 60px -20px rgba(0,0,0,0.6);
+  }
+  .feed-shell::before{
+    content:"";position:absolute;inset:0;z-index:2;pointer-events:none;
+    background:linear-gradient(180deg, var(--navy-panel) 0%, transparent 14%, transparent 86%, var(--navy-panel-2) 100%);
+  }
+  .feed-head{
+    display:flex;align-items:center;gap:10px;
+    padding:6px 8px 16px;border-bottom:1px solid var(--hairline);margin-bottom:12px;
+  }
+  
+  .job-card{
+    background:rgba(243,239,228,0.03);
+    border:1px solid var(--hairline);
+    border-radius:14px;padding:14px 16px;
+  }
+  .job-card .row1{display:flex;align-items:center;justify-content:space-between;gap:10px;}
+  .job-card .title{font-weight:700;font-size:14.5px;display:flex;align-items:center;gap:6px;}
+  .job-card .badge{
+    font-size:10.5px;font-weight:700;color:var(--navy-deep);
+    background:var(--emerald);padding:3px 9px;border-radius:999px;flex-shrink:0;
+  }
+  .job-card .meta{margin-top:8px;display:flex;gap:14px;font-size:12px;color:var(--muted);flex-wrap:wrap;}
+  .job-card .meta span{display:flex;align-items:center;gap:4px;}
+  .job-card .salary{color:var(--gold);font-weight:700;}
+
+  /* ===== STATS BAR ===== */
+  .stats-bar{
+    position:relative;z-index:1;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px;
+    padding:34px 32px;margin:70px 0;
+    border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+  }
+  .stat{text-align:center;flex:1;min-width:140px;}
+  .stat .n{font-family:'Almarai';font-weight:800;font-size:30px;color:var(--gold);}
+  .stat .l{font-size:12.5px;color:var(--muted);margin-top:4px;}
+
+  /* ===== CATEGORIES ===== */
+  .section-head{text-align:center;margin-bottom:44px;}
+  .section-head .eyebrow{margin-bottom:16px;}
+  .section-head h2{font-size:clamp(26px,3.6vw,36px);font-weight:800;}
+  .section-head p{color:var(--muted);margin-top:12px;font-size:15.5px;}
+
+  .cat-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:16px;
+    position:relative;z-index:1;
+  }
+  .cat-card{
+    background:var(--navy-panel);border:1px solid var(--hairline);
+    border-radius:16px;padding:24px 20px;
+    transition:border-color .2s ease, transform .2s ease;
+  }
+  .cat-card:hover{border-color:rgba(240,180,41,0.4);transform:translateY(-3px);}
+  .cat-card .ic{font-size:26px;}
+  .cat-card .name{font-family:'Almarai';font-weight:700;font-size:16px;margin-top:14px;}
+  .cat-card .desc{font-size:13px;color:var(--muted);margin-top:6px;line-height:1.7;}
+
+  /* ===== STEPS ===== */
+  .steps{position:relative;z-index:1;}
+  .step-row{
+    display:grid;grid-template-columns:56px 1fr;gap:20px;
+    padding:26px 0;border-bottom:1px solid var(--hairline);
+  }
+  .step-row:last-child{border-bottom:none;}
+  .step-num{
+    font-family:'Almarai';font-weight:800;font-size:20px;color:var(--gold);
+    width:52px;height:52px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    border:1px solid rgba(240,180,41,0.3);
+  }
+  .step-body h3{font-size:17.5px;font-weight:700;margin-bottom:6px;}
+  .step-body p{color:var(--muted);font-size:14.5px;line-height:1.8;max-width:60ch;}
+
+  /* ===== FINAL CTA ===== */
+  .final-cta{
+    position:relative;z-index:1;
+    text-align:center;
+    background:linear-gradient(160deg,var(--navy-panel),var(--navy-deep));
+    border:1px solid var(--hairline);
+    border-radius:26px;
+    padding:64px 28px;margin:90px auto;
+  }
+  .final-cta h2{font-size:clamp(24px,4vw,34px);font-weight:800;}
+  .final-cta p{color:var(--muted);margin-top:12px;font-size:15.5px;}
+  .final-cta .cta-btn{margin-top:26px;padding:16px 34px;font-size:16px;}
+
+  footer{
+    position:relative;z-index:1;
+    border-top:1px solid var(--hairline);
+    padding:30px 0;text-align:center;color:var(--muted);font-size:13px;
+  }
+
+  @media(max-width:860px){
+    .hero-grid{grid-template-columns:1fr;}
+    .feed-shell{height:340px;order:-1;}
+    .cat-grid{grid-template-columns:repeat(2,1fr);}
+    .stats-bar{padding:28px 16px;}
+  }
+  @media(max-width:520px){
+    .cat-grid{grid-template-columns:1fr;}
+    .nav .cta-ghost{display:none;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .feed-track{animation:none;}
+    .eyebrow .dot{animation:none;}
+  }
+</style>
+</head>
+<body>
+<div class="bg-tex"></div>
+
+<header>
+  <div class="nav wrap">
+    <div class="brand">
+<span style="font-size:24px;font-weight:800;font-family:'Almarai',sans-serif;">عايز شغل</span>
+</div>
+    <div style="display:flex;gap:10px;align-items:center;">
+      <a href="https://t.me/Managerjobs_5" class="cta-ghost">تعرف علينا</a>
+      <a href="https://t.me/Managerjobs_5" class="cta-btn">انضم الآن ↗</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow"><span class="dot"></span> تحديث يومي بوظائف جديدة</div>
+      <h1>أكبر قناة وظائف <span class="accent">في مصر والسعودية</span></h1>
+      <p class="lede">وظائف حقيقية بتوصلك أول بأول قبل ما تتزحم. رواتب تنافسية تصل إلى 50,000 جنيه، في كل المجالات، من غير دوشة ولا وسطاء.</p>
+      <div class="hero-actions">
+        <a href="https://t.me/Managerjobs_5" class="cta-btn">انضم للقناة الآن ↗</a>
+        <a href="#categories" class="cta-ghost">شوف المجالات</a>
+      </div>
+      <div class="trust-row">
+        <div class="trust-item"><span class="num">1,158+</span><span class="lbl">مشترك نشط</span></div>
+        <div class="trust-item"><span class="num">يومي</span><span class="lbl">تحديث الوظائف</span></div>
+        <div class="trust-item"><span class="num">50K</span><span class="lbl">أقصى راتب معلن</span></div>
+      </div>
+    </div>
+
+    <div class="feed-shell">
+      <div class="feed-head"><div>
+          <div class="t">عايز شغل</div>
+          <div class="s">آخر الوظائف المنشورة</div>
+        </div>
+      </div>
+      <div class="feed-track" id="feedTrack">
+        <!-- filled by JS, duplicated for seamless loop -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="stats-bar">
+    <div class="stat"><div class="n">1,158</div><div class="l">مشترك</div></div>
+    <div class="stat"><div class="n">2</div><div class="l">مشرف نشط</div></div>
+    <div class="stat"><div class="n">2026</div><div class="l">وظائف محدثة</div></div>
+    <div class="stat"><div class="n">مصر · السعودية</div><div class="l">نطاق التغطية</div></div>
+  </div>
+</div>
+
+<section class="wrap" id="categories" style="margin-top:20px;">
+  <div class="section-head">
+    <div class="eyebrow" style="color:var(--gold);border-color:rgba(240,180,41,.35);background:rgba(240,180,41,.08);">
+      <span class="dot" style="background:var(--gold);"></span> المجالات المتاحة
+    </div>
+    <h2>وظائف في كل التخصصات</h2>
+    <p>مهما كان مجالك، فيه وظيفة بتتنشر بالاسم بتاعك</p>
+  </div>
+  <div class="cat-grid">
+    <div class="cat-card"><div class="ic">🎧</div><div class="name">خدمة عملاء ودعم فني</div><div class="desc">وظائف حضوري وعن بعد، بمرتبات ثابتة وحوافز</div></div>
+    <div class="cat-card"><div class="ic">📈</div><div class="name">مبيعات وتسويق</div><div class="desc">راتب أساسي + عمولات، لشركات مصرية وخليجية</div></div>
+    <div class="cat-card"><div class="ic">🖥️</div><div class="name">تقنية المعلومات</div><div class="desc">مطورين، دعم تقني، وتخصصات تقنية متنوعة</div></div>
+    <div class="cat-card"><div class="ic">🏢</div><div class="name">إدارة ومحاسبة</div><div class="desc">وظائف إدارية ومالية في شركات موثوقة</div></div>
+    <div class="cat-card"><div class="ic">🌍</div><div class="name">عمل عن بعد</div><div class="desc">فرص تناسب أي مكان، بمرتبات بالدولار أحياناً</div></div>
+    <div class="cat-card"><div class="ic">🇸🇦</div><div class="name">وظائف السعودية</div><div class="desc">فرص مباشرة لسوق العمل السعودي بمزايا مميزة</div></div>
+  </div>
+</section>
+
+<section class="wrap steps" style="margin-top:90px;">
+  <div class="section-head">
+    <h2>إزاي تستخدم القناة؟</h2>
+    <p>ثلاث خطوات بسيطة، من الانضمام لحد التقديم</p>
+  </div>
+  <div class="step-row">
+    <div class="step-num">١</div>
+    <div class="step-body"><h3>انضم للقناة</h3><p>اضغط على "انضم الآن" وسجّل دخولك لقناة "عايز شغل" على تليجرام مجاناً.</p></div>
+  </div>
+  <div class="step-row">
+    <div class="step-num">٢</div>
+    <div class="step-body"><h3>تابع الوظائف اليومية</h3><p>كل وظيفة بتتنشر فيها تفاصيل الراتب والمكان وطريقة التقديم بشكل واضح.</p></div>
+  </div>
+  <div class="step-row">
+    <div class="step-num">٣</div>
+    <div class="step-body"><h3>قدّم مباشرة</h3><p>تواصل مع جهة العمل حسب الطريقة الموضحة في المنشور، من غير وسيط ومن غير رسوم.</p></div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="final-cta">
+    <h2>مستني إيه؟ الوظيفة اللي بتدور عليها ممكن تتنشر النهاردة</h2>
+    <p>انضم دلوقتي لأكتر من 1,158 عضو بيتابعوا آخر فرص العمل في مصر والسعودية</p>
+    <a href="https://t.me/Managerjobs_5" class="cta-btn">انضم للقناة على تليجرام ↗</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    قناة "عايز شغل" — t.me/Managerjobs_5 · قناة عامة على تليجرام
+  </div>
+</footer>
+
+<script>
+  const jobs = [
+    {title:"خدمة عملاء", city:"القاهرة", type:"دوام كامل", salary:"8,000 - 12,000 ج"},
+    {title:"مندوب مبيعات", city:"الرياض", type:"راتب + عمولة", salary:"حسب الأداء"},
+    {title:"دعم فني (لغات متعددة)", city:"عن بعد", type:"عمل مرن", salary:"مرتب تنافسي"},
+    {title:"محاسب", city:"جدة", type:"دوام كامل", salary:"6,000 - 9,000 ر.س"},
+    {title:"مسؤول تسويق رقمي", city:"القاهرة", type:"دوام كامل", salary:"حتى 15,000 ج"},
+    {title:"مشرف مبيعات", city:"الإسكندرية", type:"دوام كامل", salary:"حتى 50,000 ج"},
+    {title:"موظف استقبال", city:"الدمام", type:"دوام كامل", salary:"مرتب + سكن"},
+    {title:"مطور واجهات", city:"عن بعد", type:"عمل حر", salary:"بالمشروع"}
+  ];
+
+  const track = document.getElementById('feedTrack');
+  function cardHTML(j){
+    return `<div class="job-card">
+      <div class="row1">
+        <div class="title">✅ ${j.title}</div>
+        <div class="badge">جديد</div>
+      </div>
+      <div class="meta">
+        <span>📍 ${j.city}</span>
+        <span>🕒 ${j.type}</span>
+        <span class="salary">💰 ${j.salary}</span>
+      </div>
+    </div>`;
+  }
+  const doubled = [...jobs, ...jobs];
+  track.innerHTML = doubled.map(cardHTML).join('');
+</script>
+
+</body>
+</html>
